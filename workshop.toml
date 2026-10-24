@@ -6,7 +6,7 @@
 
 esp_toml_version = 1.0
 firmware_images_url = "https://adityahpatwardhan.github.io/esp32-workshop-flash/"
-supported_apps = ["1-Hello-Board", "2-Person-Detector-v2", "3-RainMaker-Switch", "TEST-Person-Detector", "Hello-Board-usbconsole", "Person-Detector-usbconsole"]
+supported_apps = ["1-Hello-Board", "2-Person-Detector-v2", "3-RainMaker-Switch", "Hello-Board-usbconsole", "Person-Detector-usbconsole"]
 
 [1-Hello-Board]
 chipsets = ["ESP32", "ESP32-S3"]
@@ -44,9 +44,3 @@ image.esp32-s3 = "s3cam/03_person_detector-usbconsole-merged.bin"
 description = "ESP32-S3 only: Person Detector with the console on the chip's native USB."
 console_baudrate = 115200
 
-# Instructor test build, not for teams
-[TEST-Person-Detector]
-chipsets = ["ESP32"]
-image.esp32 = "esp32cam/03_person_detector-test-merged.bin"
-description = "Instructor test build (ESP32-CAM, wide view). Teams: use 2-Person-Detector."
-console_baudrate = 115200
