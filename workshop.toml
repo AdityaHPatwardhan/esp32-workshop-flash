@@ -6,7 +6,7 @@
 
 esp_toml_version = 1.0
 firmware_images_url = "https://adityahpatwardhan.github.io/esp32-workshop-flash/"
-supported_apps = ["1-Hello-Board", "2-Person-Detector-v2", "3-RainMaker-Switch", "Hello-Board-usbconsole", "Person-Detector-usbconsole"]
+supported_apps = ["1-Hello-Board", "2-Person-Detector-v2", "3-RainMaker-Switch-v2", "Hello-Board-usbconsole", "Person-Detector-usbconsole"]
 
 [1-Hello-Board]
 chipsets = ["ESP32", "ESP32-S3"]
@@ -22,11 +22,11 @@ image.esp32-s3 = "s3cam/03_person_detector-merged.bin"
 description = "TinyML person detection. Type: team <name> in the console, then watch the projector."
 console_baudrate = 115200
 
-[3-RainMaker-Switch]
+[3-RainMaker-Switch-v2]
 chipsets = ["ESP32", "ESP32-S3"]
-image.esp32 = "esp32cam/esp32_RainMaker_switch.bin"
+image.esp32 = "esp32cam/04_rainmaker_switch-merged.bin"
 image.esp32-s3 = "s3cam/esp32s3_RainMaker_switch.bin"
-description = "ESP RainMaker switch (Espressif example). Scan the QR code in the console with the ESP RainMaker app."
+description = "ESP RainMaker switch: the app turns the board's LEDs (incl. the bright flash LED) on and off. Add it with the QR code from the console."
 console_baudrate = 115200
 ios_app_url = "https://apps.apple.com/app/esp-rainmaker/id1497491540"
 android_app_url = "https://play.google.com/store/apps/details?id=com.espressif.rainmaker"
