@@ -6,7 +6,7 @@
 
 esp_toml_version = 1.0
 firmware_images_url = "https://adityahpatwardhan.github.io/esp32-workshop-flash/"
-supported_apps = ["1-Hello-Board", "2-Person-Detector", "3-RainMaker-Switch", "TEST-Person-Detector", "Hello-Board-usbconsole", "Person-Detector-usbconsole"]
+supported_apps = ["1-Hello-Board", "2-Person-Detector-v2", "3-RainMaker-Switch", "TEST-Person-Detector", "Hello-Board-usbconsole", "Person-Detector-usbconsole"]
 
 [1-Hello-Board]
 chipsets = ["ESP32", "ESP32-S3"]
@@ -15,7 +15,7 @@ image.esp32-s3 = "s3cam/01_blink-merged.bin"
 description = "Prints a report about your board, shows it on the projector, then blinks the LED. Type: team <name> in the console."
 console_baudrate = 115200
 
-[2-Person-Detector]
+[2-Person-Detector-v2]
 chipsets = ["ESP32", "ESP32-S3"]
 image.esp32 = "esp32cam/03_person_detector-merged.bin"
 image.esp32-s3 = "s3cam/03_person_detector-merged.bin"
