@@ -1,0 +1,26 @@
+# ESP Launchpad Quick Start config for the PICT ESP32 workshop (s3cam boards).
+# Open: https://espressif.github.io/esp-launchpad/?flashConfigURL=https://adityahpatwardhan.github.io/esp32-workshop-flash/s3cam.toml
+
+esp_toml_version = 1.0
+firmware_images_url = "https://adityahpatwardhan.github.io/esp32-workshop-flash/s3cam/"
+supported_apps = ["1-Hello-Board", "2-Person-Detector", "3-RainMaker-Switch"]
+
+[1-Hello-Board]
+chipsets = ["ESP32-S3"]
+image.esp32-s3 = "01_blink-merged.bin"
+description = "Prints a report about your board (chip, memory, camera, mic, Wi-Fi), then blinks the LED."
+console_baudrate = 115200
+
+[2-Person-Detector]
+chipsets = ["ESP32-S3"]
+image.esp32-s3 = "03_person_detector-merged.bin"
+description = "TinyML person detection. Type: team <name> in the console, then watch the projector."
+console_baudrate = 115200
+
+[3-RainMaker-Switch]
+chipsets = ["ESP32-S3"]
+image.esp32-s3 = "esp32s3_RainMaker_switch.bin"
+description = "ESP RainMaker switch (Espressif example). Scan the QR code in the console with the ESP RainMaker app."
+console_baudrate = 115200
+ios_app_url = "https://apps.apple.com/app/esp-rainmaker/id1497491540"
+android_app_url = "https://play.google.com/store/apps/details?id=com.espressif.rainmaker"

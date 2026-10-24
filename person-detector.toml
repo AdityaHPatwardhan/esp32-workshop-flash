@@ -1,0 +1,15 @@
+# ESP Launchpad Minimal config: one-click Person Detector flash + console with a command box.
+# Open: https://espressif.github.io/esp-launchpad/minimal-launchpad/?flashConfigURL=https://adityahpatwardhan.github.io/esp32-workshop-flash/person-detector.toml
+
+esp_toml_version = 1.0
+supported_apps = ["Person-Detector"]
+multipart = true
+chip = "esp32s3"
+
+[[portConnectionOptions]]
+console_baudrate = 115200
+
+[Person-Detector]
+readme.text = "https://adityahpatwardhan.github.io/esp32-workshop-flash/README-participants.md"
+image.esp32s3.parts = ["https://adityahpatwardhan.github.io/esp32-workshop-flash/s3cam/03_person_detector-merged.bin"]
+image.esp32s3.addresses = ["0x0"]
