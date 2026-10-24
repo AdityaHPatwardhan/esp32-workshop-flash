@@ -8,6 +8,9 @@ https://espressif.github.io/esp-launchpad/?flashConfigURL=https://adityahpatward
 
 ESP32-S3-EYE: https://espressif.github.io/esp-launchpad/?flashConfigURL=https://adityahpatwardhan.github.io/esp32-workshop-flash/s3eye.toml
 
+Hello Board with a console command box:
+https://espressif.github.io/esp-launchpad/minimal-launchpad/?flashConfigURL=https://adityahpatwardhan.github.io/esp32-workshop-flash/hello-board.toml
+
 Person Detector with a console command box:
 https://espressif.github.io/esp-launchpad/minimal-launchpad/?flashConfigURL=https://adityahpatwardhan.github.io/esp32-workshop-flash/person-detector.toml
 

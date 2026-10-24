@@ -1,0 +1,15 @@
+# ESP Launchpad Minimal config: one-click Hello Board flash + console with a command box.
+# Open: https://espressif.github.io/esp-launchpad/minimal-launchpad/?flashConfigURL=https://adityahpatwardhan.github.io/esp32-workshop-flash/hello-board.toml
+
+esp_toml_version = 1.0
+supported_apps = ["Hello-Board"]
+multipart = true
+chip = "esp32s3"
+
+[[portConnectionOptions]]
+console_baudrate = 115200
+
+[Hello-Board]
+readme.text = "https://adityahpatwardhan.github.io/esp32-workshop-flash/README-participants.md"
+image.esp32s3.parts = ["https://adityahpatwardhan.github.io/esp32-workshop-flash/s3cam/01_blink-merged.bin"]
+image.esp32s3.addresses = ["0x0"]
